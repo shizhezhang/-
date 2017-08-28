@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#content{
+				width: 500px;
+				background: #FFC0CB;
+				padding: 100px;
+				margin-bottom:100px ;
+			}
+			#box{
+				width: 200px;
+				height: 200px;
+				background: #FFD700;
+			}
+			#footer{
+				width: 500px;
+				height: 200px;
+				background: #FFFF00;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			padding与margin的区别
+				padding的作用在元素的里面，拉开的距离会显示元素的背景
+				margin的作用在元素的外面，拉开的距离不会显示元素的背景
+			
+			什么时候用
+				父子级元素之间的距离，通过给父级加padding来设置
+				同级之间的元素距离，通过添加margin来设置
+		-->
+		<div id="content">                
+			<div id="box"></div>
+		</div>
+		<div id="footer"></div>
+	</body>
+</html>

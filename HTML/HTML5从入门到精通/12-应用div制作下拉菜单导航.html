@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<hr size="4" color="#008000">
+	<br/>
+	
+	<table width="400px" border="0" align="center" cellspacing="0" cellpadding="0" style="font-size: 15px;">
+		<tr>
+			<td width="20%">
+				<div align="center" id="Tdiv_1" class="menubar" onmouseover="divControl(1)" onmouseout="divControl(0)">教育网站</div>
+			</td>
+			<td width="20%">
+				<div align="center" id="Tdiv_2" class="menubar" onmouseover="divControl(1)" onmouseout="divControl(0)">电脑丛书网站</div>
+			</td>
+			<td width="20%">
+				<div align="center" id="Tdiv_3" class="menubar" onmouseover="divControl(1)" onmouseout="divControl(0)">新出图书</div>
+			</td>
+			<td width="20%">
+				<div align="center" id="Tdiv_4" class="menubar" onmouseover="divControl(1)" onmouseout="divControl(0)">其他网站</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="20%">
+				<div align="left" id="Div1" class="menu" onmouseover="keepstyle(this)" onmouseout="hidediv(this)">
+				<a href="http://www.baidu.com">重庆XX大学</a><br/>
+				<a href="#">深圳XX大学</a><br/>
+				</div>
+			</td>
+			<td width="20%">
+				<div align="left" id="Div2" class="menu" onmouseover="keepstyle(this)" onmouseout="hidediv(this)">
+				<a href="#">VB图书</a><br/>
+				<a href="#">JS图书</a><br/>
+				</div>
+			</td>
+			<td width="20%">
+				<div align="left" id="Div3" class="menu" onmouseover="keepstyle(this)" onmouseout="hidediv(this)">
+				<a href="#">VB图书</a><br/>
+				<a href="#">JS图书</a><br/>
+				</div>
+			</td>
+			<td width="20%">
+				<div align="left" id="Div4" class="menu" onmouseover="keepstyle(this)" onmouseout="hidediv(this)">
+				<a href="#">VB图书</a><br/>
+				<a href="#">JS图书</a><br/>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<script language="JavaScript">
+		//自定义函数divControl()，判断是否显示相对应的下拉列表。
+		function divControl(show){
+			window.event.cancelBubble=true;
+			var objID=event.srcElement.id;
+			var index=objID.indexOf("_");
+			var mainID=objID.substring(0,index);
+			var numID=objID.substring(index+1);
+			if(mainID=="Tdiv"){
+				if(show==1){eval("showdiv("+"Div"+numID+")");}
+				else{eval("hidediv("+"Div"+numID+")");}
+			}
+		}
+		//自定义函数displayMenu()，在显示下拉菜单时，以下拉方式显示下拉菜单。
+		var nbottom=0,speed=2;
+		function displayMenu(obj){
+			obj.style.clip="rect(0 100% "+nbottom+"% 0";
+			nbottom+=speed;
+			if(nbottom<=100){
+				timerID=setTimeout("displayMenu("+obj.id+"),1");
+			}
+			else clearTimeout(timerID);
+		}
+		//自定义函数showdiv()显示下拉列表的下拉选项。
+		function showdiv(obj){
+			obj.style.display="block";
+			obj.style.clip="rect(0 0 0 0)";
+			nbottom=5;
+			displayMenu(obj);
+		}
+		//自定义函数hidediv()，隐藏下拉列表的下拉选项。
+		function hidediv(obj){
+			nbottom=0;
+			obj.style.display="none";
+		}
+		//自定义函数keepstyle()，在下拉菜单中移动时，保持下拉列表的样式
+		function keepstyle(obj){        
+			obj.style.display="block";
+		}
+	</script>
+	</body>
+</html>

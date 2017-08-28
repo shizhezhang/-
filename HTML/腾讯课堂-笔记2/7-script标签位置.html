@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width: 100px;
+				height: 100px;
+				background: #DCDCDC;
+			}
+			/*
+			 * 这里放的是CSS的注释
+			 */
+		</style>
+		<script>
+			/*
+			 * 页面中的代码在一般情况下会按从上往下的顺序，从左往右的顺序执行
+			 * 
+			 * 	当代码走到22行的时候，它会去页面中找到一个id为btn的元素，但是代码走到22行的时候，以下代码是没有加载的，所以找不到，则会报错
+			 * 
+			 * 解决办法：
+			 * 	window.onload           页面加载完成
+			 *  window.onload=function(){
+			 * 		//当页面中的元素全部加载完成后执行这里的代码
+			 * }
+			 */
+			//alert(document.getElementById('btn'));  //  null获取的对象为空（这个对象不存在）
+			
+			window.onload=function(){
+				document.getElementById('btn').onclick=function(){
+				document.getElementById('box').style.width='200px';
+				document.getElementById('box').style.height='200px';
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<!--
+			html的注销
+		-->
+		<input type="button" name="btn" id="btn" value="按钮" />
+		<div id="box"></div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			/*
+			 * 需求：
+			 * 	改变所以的li的颜色，变成blue
+			 * 
+			 */
+			window.onload=function(){
+				//获取到所有的li
+				var lis1=document.getElementsByTagName('li');     //动态获取
+				var lis2=document.querySelectorAll('li');         //静态获取
+				
+				//把所有的li背景色全部变成蓝色
+				/*lis1[0].style.background='blue';
+				lis1[1].style.background='blue';
+				lis1[2].style.background='blue';
+				lis1[3].style.background='blue';
+				lis1[4].style.background='blue';*/
+				
+				for(var i=0;i<lis1.length;i++){
+					//0 1 2 3 4
+					lis1[i].style.background='blue';
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>red</li>
+			<li>yello</li>
+			<li>pink</li>
+			<li>white</li>
+			<li>gold</li>
+			<li>green</li>
+		</ul>
+	</body>
+</html>

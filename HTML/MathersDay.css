@@ -1,0 +1,221 @@
+			.div1{
+				background-image: url(img/img-bg-def.png);
+				height: 2920px;
+				width: 750px;
+			}
+			.div2{
+				position: absolute;
+				left: 36px;
+				top: 27px;
+			}
+			.div3{
+				border: solid #ea305e;
+				width: 115px;
+				height: 27px;
+				border-top-left-radius: 15px;
+				border-bottom-left-radius: 15px;
+				background-color: #ea305e;
+				position:absolute;
+				top: 32px;
+				left: 637px;
+				text-align: center;
+				line-height: 27px;
+				font-family: "微软雅黑";
+				font-size: 18px;
+				color: white;
+			}
+			.div4{
+				border: solid #f5d605;
+				position: absolute;
+				top: 42px;
+				left: 637px;
+				margin-top: 35px;
+				width: 115px;
+				height: 27px;
+				border-top-left-radius: 15px;
+				border-bottom-left-radius: 15px;
+				background-color: #f5d605;
+				text-align: center;
+				line-height: 27px;
+				font-family: "微软雅黑";
+				font-size: 18px;
+				color: #ea305e;
+			}
+			.div5{
+				position: absolute;
+				left: 229px;
+				top: 580px;
+			}
+			.div6{
+				position: absolute;
+				left: 272px;
+				top: 590px;
+			}
+			.div7{
+				position: absolute;
+				left: 235px;
+				top: 617px;
+				width: 30px;
+				height: 30px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			.div8{
+				margin-top: -30px;
+				color: white;
+			}
+			.div9{
+				position: absolute;
+				left: 269px;
+				top: 617px;
+				padding-top: 20px;
+				padding-left: 4px;
+				text-align: center;
+			}
+			.div10{
+				margin-top: -30px;
+				color: white;
+			}
+			.H{
+				position: absolute;
+				left: 307px;
+				top: 617px;
+				padding-top: 24px;
+				font-family: "微软雅黑";
+				font-size: 18px;
+				color:#d86393; 
+			}
+			.div11{
+				position: absolute;
+				left: 332px;
+				top: 617px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			.div12{
+				margin-top: -30px;
+				color: white;
+			}
+			.div13{
+				position: absolute;
+				top: 617px;
+				left: 367px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			.div14{
+				margin-top: -30px;
+				color: white;
+			}
+			.M{
+				position: absolute;
+				left: 402px;
+				top: 617px;
+				padding-top: 24px;
+				font-family: "微软雅黑";
+				font-size: 18px;
+				color:#d86393; 
+			}
+			.div15{
+				position: absolute;
+				top: 617px;
+				left: 426px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			.div16{
+				margin-top: -30px;
+				color: white;
+			}
+			.div17{
+				position: absolute;
+				top: 617px;
+				left: 461px;
+				padding-top: 20px;
+				text-align: center;
+			}
+			.div18{
+				margin-top: -30px;
+				color: white;
+			}
+			.S{
+				position: absolute;
+				left: 496px;
+				top: 617px;
+				padding-top: 24px;
+				font-family: "微软雅黑";
+				font-size: 18px;
+				color:#d86393; 
+			}
+			.div19{
+				position: absolute;
+				margin-left: 14px;
+				margin-top: 681px;
+			}
+			.div20{
+				padding-top: 30px;
+			}
+			.div21{
+				padding-top: 30px;
+			}
+			.div22{
+				padding-top: 30px;
+			}
+			.img1{
+				position: absolute;
+				margin-left: 35px;
+				margin-top: 712px;
+			}
+			.img2{
+				position: absolute;
+				margin-left: 35px;
+				margin-top: 712px;
+			}
+			.tab1{
+				position: absolute;
+				text-align: center;
+				margin-left: 354px;
+				margin-top: 728px;
+			}
+			.p1{
+				margin-top: -36px;
+				font-family: "微软雅黑";
+				font-size: 18px;
+				color: white;
+			}
+			.p2{
+				position: absolute;
+				font-family: "微软雅黑";
+				font-size: 27px;
+				margin-top: 832px;
+				margin-left: 405px;
+			}
+			.p3{
+				position: absolute;
+				font-family: "微软雅黑";
+				font-size: 18px;
+				margin-left: 404px;
+				margin-top: 917px;
+			}
+			span{
+				color: #FF0000;
+			}
+			.p4{
+				position: absolute;
+				margin-left: 29px;
+				margin-top: 1044px;
+				text-indent: 10px;
+				font-family: "微软雅黑";
+				font-size: 20px;
+			}
+			.btn1{
+				position: absolute;
+				font-family: "微软雅黑";
+				font-size: 20px;
+				text-align: center;
+				margin-top: 1087px;
+				margin-left: 35px;
+			}
+			.p5{
+				margin-top: -55px;
+			}

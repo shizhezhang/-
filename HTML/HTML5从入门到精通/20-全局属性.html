@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h2>不可编辑列表</h2>
+	<!--全局属性contenteditable-列表是否可编辑
+		值为true-可编辑
+		值为false-不可编辑
+		值为inherit-由父元素决定-->
+	<ul contenteditable="false">
+		<li>不编辑列表1</li>
+		<li>不编辑列表2</li>
+		<li>不编辑列表3</li>
+	</ul>
+	<hr size="2" color="#DB7093" />
+	<h2>可编辑列表</h2>
+	<ul contenteditable="true">
+		<li>可编辑列表1</li>
+		<li>可编辑列表2</li>
+		<li>可编辑列表3</li>
+	</ul>
+	<script>
+		document.designMode="off"
+	</script>
+	</body>
+</html>

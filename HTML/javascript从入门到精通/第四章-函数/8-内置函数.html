@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 * parseInt()函数，是将数字开头的字符串转换成整型
+			 */
+			var num1="123abc";
+			var num2="abc123";
+			document.write("(1)使用parselnt()函数<br/>");
+			document.write("123abc转换结果为："+parseInt(num1)+"<br/>");
+			document.write("abc123转换结果为："+parseInt(num2)+"<br/><br/>");
+			
+			/*
+			 * parseFloat()函数,是将数字开头的字符串转换成浮点型
+			 */
+			var num3="123.456789abc";
+			document.write("(2)使用parseFloat()函数<br/>");
+			document.write("123.456789abc转换结果为："+parseFloat(num3)+"<br/><br/>");
+			
+			/*
+			 * isNaN()函数，是检验某个值是否为NaN
+			 * 	若为NaN：返回值为true；否则为：false；
+			 */
+			document.write("(3)使用isNaN()函数<br/>");
+			document.write("abc123转换结果是否为 NaN:"+isNaN(parseInt(num2))+"<br/>");
+			document.write("123.456789abc转换结果是否为 NaN:"+isNaN(parseFloat(num3))+"<br/><br/>");
+			
+			/*
+			 * isFinite()函数，是检验某个表达式值是否无穷大
+			 * 	若为无穷大：返回值为true；否则为：false；
+			 */
+			document.write("(4)使用isFinite()函数<br/>");
+			document.write("1除以0的结果是否为无穷大："+isFinite(1/0)+"<br/><br/>");
+			
+			/*
+			 * encodeURI()函数，是获取未编码的字符串编码后的结果；
+			 */
+			//document.write("(5)使用encodeURI()函数<br/>");
+			//document.write("转换网络资源地址为："+encodeURI(需要转换的网络资源地址)+"<br/><br/>");
+			
+			/*
+			 * decodeURI()函数，是将已编码的字符串进行解码为最初的字符串
+			 */
+			//document.write("(6)使用decodeURI()函数<br/>");
+			//document.write("转换网络资源地址的字符串为："+decodeURI(encodeURI(需要转换的网络资源地址))+"<br/><br/>");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

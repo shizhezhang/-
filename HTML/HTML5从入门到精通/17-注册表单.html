@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form id="regForm" onsubmit="return chkForm();" method="post">
+	<fieldset>
+		<ol>
+			<li><label for="usename">用户名称： </label><input id="usename" name="usename" aautofocus required></li>
+			<li><label for="uemail">Email: </label><input id="uemail" name="uemail" type="email" required placeholder="example@domain.com" /></li>
+			<li><label for="age">工作年龄： </label><input type="range" name="range1" min="18" max="60" step="1"/><output onforminput="value=range1.value">30</output></li>
+			<li><label for="age2">年龄：</label><input type="number" name="age2" id="age2" required placeholder="your age" /></li>
+			<li><label for="birthday">出生日期：</label><input type="date" name="birthday" id="birthday" /></li>
+			<li><label for="search">个人主页：</label><input type="url" name="search" id="search" required list="searchlist" /></li>
+			<datalist id="searchlist">
+				<option label="Goole" value="http://www.goole.com"></option>
+				<option label="baidu" value="http://www.baidu.com"></option>
+			</datalist>
+		</ol>
+	</fieldset>
+	<div><input type="button" name="btn" id="btn" value="注册" /></div></form><br />
+	</body>
+</html>

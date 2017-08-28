@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form>
+	*姓名：<input type="text" name="usename" id="usename" required="required" />
+	<input type="submit" name="submit" id="" value="提交" /><br />
+	</form>
+	<form>
+	请输入指定格式内容：<input type="text" name="mr" id="" pattern="[0-9][A-Z]{3}" placeholder="请输入一个数字与三个大写字母。" />
+	<input type="submit" name="sub" id="sub" value="提交" />
+	</form>
+	<form>
+	<input type="number" name="number" id="" min="1" max="100" step="5" />
+	<input type="submit" name="submit" id="" value="提交" />
+	</form>
+	<script language="JavaScript">
+		function check(){
+			var email=document.getElementById("email");
+			if(email.value==""){
+				alert("请输入Email地址");
+				return false;
+			}
+			else if(email.checkValidity())
+				alert("请输入正确的Email地址");
+			else
+				alert("您输入的Email地址有效");
+		}
+	</script>
+	<form id="testform" onsubmit="return check();">
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" /><br />
+		<input type="submit" name="" id="" value="提交" />
+	</form>
+	</body>
+</html>

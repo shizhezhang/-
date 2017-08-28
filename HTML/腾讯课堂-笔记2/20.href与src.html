@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			/*
+			 * href     连接地址
+			 * src      图片地址
+			 * 
+			 * href与src获取到的是绝对地址，不是属性里的值
+			 * 
+			 * 切记，不要拿href与src获取到的值做判断
+			 * 
+			 */
+			window.onload=function(){
+				var pic=document.getElementById('pic');
+				var href=document.getElementById('link');
+				
+				console.log(pic.src);   //http://127.0.0.1:8020/HTML/12%E5%AF%B8%E7%90%A5%E7%8F%80%E6%91%86%E4%BB%B6.jpg
+				
+				console.log(link.href);  //http://127.0.0.1:8020/HTML/html-javascript%E7%AC%94%E8%AE%B02/1-%E7%BB%83%E4%B9%A0.html
+			};
+		</script>
+		<img id="pic" src="../12寸琥珀摆件.jpg"/>
+		<a href="1-练习.html" id="link">js</a>
+	</body>
+</html>

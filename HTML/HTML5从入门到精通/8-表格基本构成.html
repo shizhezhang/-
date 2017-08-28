@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+			<h4>内江市某中学</h4>
+	<table border="5px" height="50px" bordercolor="red" cellspacing="10px" background="img/pic5.jpg">                                <!--表格标记-table-->
+		<caption align="bottom">期中考试成绩公布表</caption>  <!--表格标题标记-caption-默认居中显示-->
+		<tr>                                        <!--行标记-tr-->
+			<td>这是表格的第一个单元格</td>          <!--单元格标记-td-->
+			<td>第一行中的第二个单元格</td>
+		</tr>
+		<tr>
+			<td>这是表格的第二行及第一个单元格</td>
+			<td>第二行中的第二个单元格</td>
+		</tr>
+	</table>
+	<hr size="3" color="#008800">
+	<table  width="600px" height="400px" border="5px" bordercolor="black" cellpadding="20px" bgcolor="#8A2BE2" background="img/pic5.jpg">
+	<thead align="center" valign="center">
+		<tr bgcolor="#DB7093" height="100px">
+			<th>姓名</th>
+			<th colspan="2">信息</th>              <!--单元格跨列标记-colspan-->
+			<th>爱好</th>
+		</tr>
+	</thead>
+	<tbody bgcolor="#ADFF2F" valign="center">      <!--水平对齐标记-align-->
+		<tr align="center" valign="center">        <!--垂直对齐标记-valign-->
+			<td rowspan="2" >张三</td>             <!--单元格跨行标记-rowspan-->
+			<td>15236947583</td>
+			<td>深圳市宝安区</td>
+			<td bgcolor="#FFC0CB">看书、跳舞</td>
+		</tr>
+		<tr>
+			<td>18956847125</td>
+			<td>深圳市龙岗区</td>
+			<td>打球、游泳</td>
+		</tr>
+		</tbody>
+		<tfoot align="right" valign="middle">
+			<tr bgcolor="#8A2BE2">
+				<td colspan="4">表格创建日期：2017.2.8</td>      <!--单元格跨列标记-colspan-->
+			</tr>
+		</tfoot>
+	</table>
+	<hr size="2" color="#ADFF2F">
+	<table border="1px" bgcolor="#DB7093">
+		<tr height="200px" valign="top">
+			<td background="html-javascript笔记2/pic2.jpg">这个是行属性</td>
+		</tr>
+	</table>
+	
+	<!--表格的嵌套-->
+	<!--使用表格的嵌套功能设计网页的版式-->
+	<table border="1" width="560px" height="300px" cellspacing="0" align="center">
+		<thead bgcolor="#8A2BE2">           <!--表格表头标记-thead-->
+		<tr height="70px">
+			<td width="160px">网站 logo</td>
+			<td width="400px">网站banner</td>
+		</tr>
+		</thead>
+		<tbody>
+			<tr valign="top" height="200px">
+				<td width="160px" align="center">
+					<table width="135px" height="180px" border="1" cellspacing="0" bgcolor="#FFD700">
+						<tr>
+							<td>页面导航</td>
+						</tr>
+						<tr>
+							<td>页面导航</td>
+						</tr>
+						<tr>
+							<td>页面导航</td>
+						</tr>
+						<tr>
+							<td>页面导航</td>
+						</tr>
+						<tr>
+							<td>页面导航</td>
+						</tr>
+					</table>
+				</td>
+				<td width="400px" height="200px" background="html-javascript笔记2/pic.jpg">
+					<table width="380px" height="160px" border="1" bordercolor="red" cellspacing="2" cellpadding="5">
+						<tr>
+							<td>网站模块</td>
+							<td>网站模块</td>
+						</tr>
+						<tr>
+							<td>网站模块</td>
+							<td>网站模块</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+			<tfoot bgcolor="#ADFF2F">
+				<tr>
+					<td height="30px" colspan="2" align="center"><font color="#008800">版权信息</font></td>
+				</tr>
+			</tfoot>
+	</table>
+	</body>
+</html>

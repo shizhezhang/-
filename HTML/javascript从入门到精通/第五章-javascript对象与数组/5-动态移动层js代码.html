@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script language="JavaScript">
+			var Obj="none";
+			var pX
+			var pY
+			document.onmousemove=div_move;
+			
+			//创建自定义函数div_down()，获取当前鼠标与上边界和左边界的距离
+			function div_down(tag){
+				Obj=tag;
+				pX=parseInt(document.all(Obj).style.left)-event.x;
+				pY=parseInt(document.all(Obj).style.top)-event.y;
+			}
+			//创建自定义函数div_move()，用于移动层的位置
+			function div_move(){
+				if(Obj!="none"){
+					document.all(Obj).style.left=pX+event.x;
+					document.all(obj).style.top=pY+event.y;
+					event.returnValue=false;
+				}
+				document.onmousemove=div_move;
+				//创建自定义函数div_up()，当松开鼠标，释放对当前层的控制
+				function div_up(){
+					obj="none";
+				}
+				document.onmouseup=div_up;
+				//创建自定义函数hide()，用于将层以动态效果隐藏。
+				function hide(divid){
+					divid.filters.revealTrans.apply();
+					divid.style.visibility="hidden";
+					divid.filters.revealTrans.play();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1" class="yellow" style="visibility: visible; background-color:red;position:absolute;top:60;left:200;width:360;height:250;filter:revealTrans(transition=12,duration=0.1)blendTrans(duration=0.1)">
+			<div id=title onmousedown=div_down("div1")style="background-color:red;padding:2px;font-size:13px;text-indent:5;color:blue;cursor:move">X属性和Y属性的动态移动层运用</div>
+			<img id=pic6 onclick=Hide(div1) style="position: absolute;right: 2;top: 2" border="0" src="../../img(1)/pic6.jpg" width="15" height="15"/> <span class="style1"><br>&nbsp;&nbsp;时代干啥手里的福建师范上课了司法解释阿娇是覅价格是会计私服苏格设计是覅塞个手机撒孤搜狗就撒娇i手机发顺丰iu是附件u就是发酥付款是覅故事就是看</span></div>
+	</body>
+</html>

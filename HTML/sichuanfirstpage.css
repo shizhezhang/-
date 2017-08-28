@@ -1,0 +1,103 @@
+		#bg1{
+			position:relative;
+			background-image: url(img/sichuan/bg2_02.png);
+			width: 750px;
+			height: 1206px;
+		}
+		.border1{
+			position: absolute;
+			border-radius: 8px;
+			border: 2px solid #e09527;
+			background-color: #ffd820;
+			width: 656px;
+			height: 600px;
+			margin-top: 294px;
+			margin-left: 40px;
+		}
+		.border2{
+			position: relative;
+			width: 616px;
+			height: 478px;
+			border-radius: 8px;
+			border:3px solid #e09527;
+			margin-top: 73px;
+			margin-left: 17px;
+			background-color: #fefdfd;
+		}
+		.background1{
+			position:relative;
+			width: 616px;
+			height: 182px;
+			background-color: #e6e3e3;
+		}
+		.ul1{
+			position: absolute;
+			list-style:none;
+			margin-top: 27px;
+			font-family: "微软雅黑";
+			line-height: 45px;
+			font-size: 28px;;
+		}
+		.li1{
+			color: #e03b26;
+		}
+		.div1{
+			position: relative;
+			margin-top: 23px;
+		}
+		.span1{
+			position: absolute;
+			font-family: "微软雅黑";
+			font-size: 24px;
+			margin-left: -130px;
+			line-height: 40px;	
+		}
+		.ul2{
+			list-style: decimal;
+			font-family: "微软雅黑";
+			line-height: 35px;
+			font-size: 23px;
+			margin-left: 25px;
+			color: #8d8d8d;
+		}
+		.logo{
+			text-align: center;
+			margin-top: -541px;
+		}
+		.img2{
+			position: absolute;
+			z-index: 1;
+			margin-left: 219px;
+			margin-top: 12px;
+		}
+		.img1{
+			position: absolute;
+			margin-top: 898px;
+			margin-left: 35px;
+		}
+		.btn{
+			position: absolute;
+			top: 10px;
+			font-family: "微软雅黑";
+			font-size: 44px;
+			border: none;
+			background: url(img/sichuan/btn8.png) no-repeat;
+			margin-top: 1000px;
+			margin-left: 250px;
+			padding-bottom: 20px;
+			width: 254px;
+			height: 100px; 
+			color: #ffffff;
+		}
+		.p1{
+			position: absolute;
+			margin-top: 1175px;
+			margin-left: 255px;
+			font-family: "微软雅黑";
+			font-size: 22px;
+			color: #7dbbff;
+		}
+		
+		.color{
+			color:#0000FF;
+		}

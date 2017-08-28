@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="zhe" id="zhe"></div>
+		<script>
+			/*
+			 * className
+			 * 	注意：class是js中的一个保留字。不允许用
+			 * 		在获取class时，不能用class，只能用className
+			 */
+			var zhe=document.getElementById('zhe');
+			
+			console.log(zhe.class);      //undefined
+			console.log(zhe.className);  //zhe 
+		</script>
+	</body>
+</html>

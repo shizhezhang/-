@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function rightKey(){
+					if(event.button==2){                                  //判断是否单击鼠标右键
+						event.returnValue=false;
+						alert("当前设置不允许使用鼠标右键");
+					}
+				}
+		</script>
+	</head>
+	<body onmousedown="rightKey()">
+		<script type="text/javascript">
+			document.onmousedown=rightKey;
+		</script>
+	</body>
+</html>

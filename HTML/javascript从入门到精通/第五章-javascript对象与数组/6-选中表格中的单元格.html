@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var lastSelection=null;
+			//创建自定义函数select()，保存发生事件的信息
+			function select(element){
+				var e,r,c;
+				if(element==null){
+					e=event.srcElement;                     //获取body元素的原始记录
+				}else{
+					e=element;
+				}
+				if(e.tagName=="TD"){
+					c=findcell(e);
+					if(c!=null){
+						if(lastSelection!=null){
+							deselectroworcell(window.lastSelection);
+						}
+						Selectroworcell(c);
+						lastSelection=c;
+					}
+				}
+				window.event.cancelBubble=true;             //取消冒泡语句，用于防止向下一个外层对象冒泡
+			}
+			//table1.onclick=select;         需要调用的表格
+			//创建自定义函数findcell()，用于判断选中的位置是否是单元格
+			function findcell(e){
+				if(e.tagName=="TD"){
+					return e;
+				}else if(e.tagName=="BODY"){
+					return null;
+				}else{
+					return findcell(e.parentElement);
+				}
+			}
+			//创建自定义函数selectroworcell()，用于改变单元格的前景色和背景色
+			function selectroworcell(r){
+				r.runtimeStyle.backgroundColor="darkblue";
+				r.runtimeStyle.color="white";
+			}
+			//创建自定义函数deselectroworcell()，用于将前景色和背景色恢复正常。
+			function deselectroworcell(r){
+				r.runtimeStyle.backgroundColor="";
+				r.runtimeStyle.color="";
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

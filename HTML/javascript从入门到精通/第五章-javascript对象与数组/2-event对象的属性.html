@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//ctrlKey、shiftKey、altKey属性综合应用
+			function example(){                                  //创建自定义函数
+				if((window.event.ctrlKey)+(window.event.shiftKey)+(window.event.altKey)){
+					//若Ctrl键、Shift键、Alt键同时按下，执行以下内容
+					alert("美美，我爱你一辈子，永远再一起");        //弹出一个弹窗
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.onkeydown=example;                          //应用onkeydown事件输出函数example()中的内容
+		</script>
+	</body>
+</html>

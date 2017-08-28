@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1{
+				background: #f00;
+				/*border: 1px solid #000;*/
+			}
+			#div2{
+				height: 50px;
+				background: #00800;
+				color: #fff;
+				margin: 100px;
+			}
+			#div3{
+				height: 50px;
+				background: blueviolet;
+				color:#fff;
+				margin: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			margin的问题
+				1、margin传递的问题（只有上下传递，不会左右传递）
+					子级会把自己的margin-top与margin-bottom传递给父级
+					解决办法：给父级加上一个边框（其中一个办法）
+				2、margin上下叠压（只有上下叠压，左右不会叠压）
+					上边元素的margin-top与下边的元素margin-bottom叠在了一起（取大值）
+					解决办法：只用设置一个元素给margin
+		-->
+		<div id="div1">
+			<div id="div2">div2</div>
+			<div id="div3">div3</div>
+		</div>
+	</body>
+</html>

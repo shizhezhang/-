@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var outter=10;                                                    //定义全局变量
+			function add(num1,num2){                                          //定义外部函数
+				function innerAdd(){                                          //定义内部函数
+					document.write("参数和为："+(num1+num2+outter));           //取参数的和
+				}
+				return innerAdd();                                            //调用内部函数
+			}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			add(20,30);                                                       //调用外部函数
+		</script>
+	</body>
+</html>

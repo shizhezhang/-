@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<form name="form1" method="post" action="">
+			盘符：<input type="text" name="text1"/>&nbsp;&nbsp;&nbsp;
+			<input type="button" name="btn1" value="磁盘空间" onclick="DriveSize(document.form1.text1)"/>
+		</form>
+		<script language="JavaScript">
+			function DriveSize(Drivename){
+				var fso=new ActiveXObject("Scripting.FileSystemObject");
+				var s=fso.GetDrive(Drivename.value);
+				if(s.IsReady){
+					var str,str1, Allsize=0.0;
+					str="当前驱动器的名称为："+s.DriveLetter+"\n";
+					Allsize=s.TotalSize/1024/1024/1024;
+					str="当前驱动器的大小为："+parseInt(Allsize*10)/10+"\n";
+					Allsize=s.FreeSpace/1024/1024/1024;
+					str=str+"当前驱动器的可用空间为："+parseInt(Allsize*10)/10;
+					alert(str);
+				}else{
+					alert("此驱动器无效。");
+				}
+			}
+		</script>
+	</body>
+</html>

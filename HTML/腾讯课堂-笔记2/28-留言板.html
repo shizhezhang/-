@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width: 200px;
+				height: 200px;
+				border: 1px solid #FF0000;
+			}
+		</style>
+		<script>
+			/*
+			 * 需求：
+			 * 	点击按钮，把输入框的内容显示的到box里
+			 * 分析：
+			 * 	1、获取按钮、文本框、box
+			 * 	2、给按钮添加点击事件
+			 * 		1、获取用户输入的内容（text的value）
+			 * 		2、把获取的到的内容显示到box里面
+			 */
+			
+			window.onload=function(){
+				var text=document.getElementById('text');
+				var btn=document.getElementById('btn');
+				var box=document.getElementById('box');
+				
+				btn.onclick=function(){
+					var val=text.value;          //用户输入的内容
+					//var newtext='<p>'+val+'</p>'
+					//console.log('val');
+					
+					//innerHTML
+					
+					//字符串拼接
+					//<p>132</p>
+					
+					//原来的内容            box.innerHTML
+					//新输入的内容        '<p>'+val+'</p>'
+					
+					
+					/*
+					 * innerHTML
+					 * 	设置内容
+					 * 	获取内容     （老内容）
+					 * 
+					 */
+					//box.innerHTML=box.innerHTML+newtext;       //新内容在后面显示
+					//box.innerHTML=newtext+box.innerHTML+;      //新内容在前面显示
+					box.innerHTML=box.innerHTML+'<p>'+val+'</p>';
+					
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<input type="text" name="text" id="text" value="" />
+		<input type="button" name="btn" id="btn" value="提交" />
+		<div id="box"></div>
+	</body>
+</html>
