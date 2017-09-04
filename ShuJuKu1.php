@@ -14,7 +14,7 @@
 	    $sql=mysql_query("select * from student where student_id = {$username}", $link);
 
 		$info=mysql_fetch_array($sql);
-		var_dump($info);
+		//var_dump($info);
 		if($_POST['sub']=="查询"){
 			$txt_book=$_POST['txt_book'];
 			var_dump($_POST);
