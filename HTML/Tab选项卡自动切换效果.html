@@ -2,10 +2,100 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="Tab选项卡切换效果.css"/>
-		<script src="Tab选项卡切换效果.js" type="text/javascript" charset="utf-8"></script>
-		<script src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+		<title>Tab选项卡自动切换</title>
+		<script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
+		<style type="text/css">
+					*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.notice{
+				width: 298px;
+				height: 98px;
+				border: 1px solid #EEEEEE;
+				overflow: hidden;
+			}
+			.notice-tit{
+				position: relative;
+				height: 27px;
+				background: #F7F7F7;
+			}
+			#notice ul li{
+				list-style: none;
+				font-family: "微软雅黑";
+				font-size: 12px;
+				float: left;
+			}
+			.notice-tit ul{
+				position: absolute;
+				width: 301px;
+				left: -1px;
+			}
+			.notice-tit li{
+				float: left;
+				width: 58px;
+				height: 26px;
+				line-height: 26px;
+				text-align: center;
+				overflow: hidden;
+				background: #FFFFFF;
+				padding: 0 1px;
+				border-bottom: 1px solid #EEEEEE;
+				background: #F7F7F7;
+			}
+			.notice li a,.notice li a{
+				text-decoration: none;
+				color: #000000;
+			}
+			.notice-tit li a:hover{
+				color: #0000FF;
+			}
+			.notice-tit li.select{
+				background: #FFFFFF;
+				border-bottom-color:#FFFFFF;
+				border-left: 1px solid #EEEEEE;
+				border-right: 1px solid #EEEEEE;
+				padding: 0px;
+				font-weight: bolder;
+			}
+			.notice-con .mod{
+				margin: 10px 6px;
+			}
+			.notice-con .mod ul li{
+				float: left;
+				width: 143px;
+				height: 25px;
+				overflow: hidden;
+			}
+			.mod ul li a:hover{
+				color: #ADFF2F;
+			}
+
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				//当前高亮显示的页签的索引
+				var index=0;
+				var timer=null;
+				//获取所有页签和要切换的内容
+				var lis=document.getElementById("notice-tit").getElementsByTagName("li");
+				var divs=document.getElementById("notice-con").getElementsByTagName("div");
+				//添加定时器，改变当前高亮的索引
+				timer=setInterval(function(){
+					index++;
+					if(index>=lis.length){
+						index=0;
+					}
+					for(var j=0;j<lis.length;j++){
+						lis[j].className="";
+						divs[j].style.display="none";
+					}
+					//高亮显示当前页签
+					lis[index].className="select";
+					divs[index].style.display="block";
+				},2000);
+			}
+		</script>
 	</head>
 	<body>
 		<div id="notice" class="notice">
